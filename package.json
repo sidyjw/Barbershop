@@ -1,0 +1,22 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido apenas para fins educanionais. Todos os direitos pertencem há https://www.awwwards.com/sites/barber-wordpress-theme-for-barbers-hair-salons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidyjw/Barbershop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidyjw/Barbershop/issues"
+  },
+  "homepage": "https://github.com/sidyjw/Barbershop#readme",
+  "dependencies": {
+    "sass": "^1.3.2"
+  }
+}

@@ -1,0 +1,100 @@
+*::before,
+*::after,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//CORES
+$cor-branca: #fff;
+$cor-secundaria: #538167;
+$cor-terciaria: #333;
+$cor-contato-borda: rgb(92, 90, 90);
+
+//MEDIDAS
+
+$altura-header-contatos: 5vh; 
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: Oswald;
+    color: $cor-branca;
+    
+}
+.container-flex{
+    display: flex;
+    
+}
+
+.header{
+    background-color: $cor-terciaria;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5px solid $cor-contato-borda;
+    border-bottom: 0.5px solid $cor-contato-borda; 
+}
+.contatos{
+    display: flex;
+    width: 100%;
+    max-width: 85vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+    &__endereco{
+        display: flex;
+        font-size: 1.5rem;
+        align-items: center;
+        
+        &-lista{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            & li{
+                height: $altura-header-contatos;
+                display: flex;
+                line-height: $altura-header-contatos;
+                
+                
+                &:not(:first-of-type){
+                    padding-left: 2rem;
+                }
+                &:not(:last-of-type){
+                    border-right: 0.1px solid $cor-contato-borda;
+                    padding-right: 5rem;
+                }
+
+                & i{
+                    font-size: 1.6rem;
+                    line-height: $altura-header-contatos;
+                    margin-right: 5px;
+                    
+                }
+            }    
+        }
+    }
+
+    &__midias{
+        display: flex;
+
+        &-lista{
+            display: flex;
+            list-style: none;
+            & li{
+                border-left: 0.5px solid $cor-contato-borda;
+                &:last-of-type{
+                    border-right: 0.5px solid $cor-contato-borda;
+                } 
+                
+                & i{
+                    font-size: 1.5rem;
+                    padding: 0 10px;
+                    line-height: $altura-header-contatos; 
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Oswald;
+  color: #fff;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.header {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.5px solid #5c5a5a;
+  border-bottom: 0.5px solid #5c5a5a;
+}
+
+.contatos {
+  display: flex;
+  width: 100%;
+  max-width: 85vw;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.contatos__endereco {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.contatos__endereco-lista {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.contatos__endereco-lista li {
+  height: 5vh;
+  display: flex;
+  line-height: 5vh;
+}
+
+.contatos__endereco-lista li:not(:first-of-type) {
+  padding-left: 2rem;
+}
+
+.contatos__endereco-lista li:not(:last-of-type) {
+  border-right: 0.1px solid #5c5a5a;
+  padding-right: 5rem;
+}
+
+.contatos__endereco-lista li i {
+  font-size: 1.6rem;
+  line-height: 5vh;
+  margin-right: 5px;
+}
+
+.contatos__midias {
+  display: flex;
+}
+
+.contatos__midias-lista {
+  display: flex;
+  list-style: none;
+}
+
+.contatos__midias-lista li {
+  border-left: 0.5px solid #5c5a5a;
+}
+
+.contatos__midias-lista li:last-of-type {
+  border-right: 0.5px solid #5c5a5a;
+}
+
+.contatos__midias-lista li i {
+  font-size: 1.5rem;
+  padding: 0 10px;
+  line-height: 5vh;
+}
+/*# sourceMappingURL=main.css.map */
