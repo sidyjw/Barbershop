@@ -11,10 +11,12 @@ $cor-secundaria: #538167;
 $cor-terciaria: #333;
 $cor-contato-borda: rgb(92, 90, 90);
 
+$cor-menu-navegacao: #474747;
+
 //MEDIDAS
 
-$altura-header-contatos: 5vh; 
-
+$altura-header-contatos: 3.5rem; 
+$largura-header: 118rem;
 html{
     font-size: 62.5%;
 }
@@ -26,7 +28,7 @@ body{
 }
 .container-flex{
     display: flex;
-    
+    flex-flow: column;
 }
 
 .header{
@@ -40,19 +42,20 @@ body{
 .contatos{
     display: flex;
     width: 100%;
-    max-width: 85vw;
+    max-width:$largura-header;
     margin: 0 auto;
     justify-content: space-between;
-    
+
     &__endereco{
         display: flex;
         font-size: 1.5rem;
         align-items: center;
-        
+
         &-lista{
             display: flex;
             list-style: none;
             align-items: center;
+            
             & li{
                 height: $altura-header-contatos;
                 display: flex;
@@ -96,5 +99,51 @@ body{
                 }
             }
         }
+    }
+}
+
+.navegacao{
+    background-color: rgba($cor-menu-navegacao, 0.8);
+    height: 9rem;
+    display: flex;
+    width: 100%;
+
+    &__area{
+        width: 100%;
+        max-width: $largura-header;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        width: 175px;
+        height: 47px;
+        margin-right: 8rem;
+    }
+    &__menu{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        flex: 2;
+        height: 9rem;
+
+        & li{
+            padding: 3rem 1.5rem;
+            cursor: pointer;
+            transition: color 250ms linear;
+
+            &:hover{
+                color: $cor-secundaria;
+            }
+        }
+    }
+    &__botao{
+        background-color: $cor-secundaria;
+        border: none 0;
+        color: #fff;
+        padding: 1.55rem 3.6rem;
+        margin: 0; 
     }
 }
